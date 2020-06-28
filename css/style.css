@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/bkg.JPG');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+}
+.clearfix:after {
+    content : ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+      
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+    
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    padding-right: 5px ;
+}
+.main-nav li a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+
+}
+.main-content-header{
+    width: 1180;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    color: #ffffff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+
+}
+.btn-full:hover{
+    background-color: #fff;
+
+}
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-nav:hover{
+    background-color:#bf55ec ;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.colorchange{
+    animation: colorchangenaeem 1s infinite;
+}
+@keyframes colorchangenaeem {
+    0%{color: #bf55ec;}
+    25%{color: aqua;}
+    50%{color: #ffffff;}
+    100%{color: brown;}
+}
+
