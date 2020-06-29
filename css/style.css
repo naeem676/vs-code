@@ -103,10 +103,45 @@ h1{
 .colorchange{
     animation: colorchangenaeem 1s infinite;
 }
+.mobile-icon{
+    display: none;
+}
+.main-nav{float: left;}
 @keyframes colorchangenaeem {
     0%{color: #bf55ec;}
     25%{color: aqua;}
     50%{color: #ffffff;}
     100%{color: brown;}
+}
+@media only screen and (max-width:1180px) {
+    .main-content-header{
+        width: 100%;
+        padding:0 2%;
+    }
+}
+@media only screen and (max-width: 998px) {
+    h1{font-size: 200%;}
+
+}
+@media only screen and (max-width:998px) {
+    h1{font-size: 180%;}
+    .main-nav{display: none;}
+    .mobile-icon{
+        display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .btn-full{
+        margin-bottom: 20px;
+    }
+    h1{font-size: 160%;}
 }
 
